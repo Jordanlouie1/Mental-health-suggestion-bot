@@ -10,7 +10,9 @@ def dailyRoutine():
         #question types ratings, reminder, yn
 def responder(qtype, response):
     if qtype == 'rating':
-        print(response)
+        print(response + " \n")
+        used = input() 
+        print(used)
     if qtype == 'dialog':
         print(response)
     if qtype == 'yn':
@@ -19,6 +21,8 @@ def responder(qtype, response):
 def checkTime(time):
     if time == "09:0":
         print(time)
+        sender(questions["rating"])
+        x = responder("rating", questions["rating"])
     elif time == "01:0":
         print(time)
     elif  time == "18:0":
@@ -27,10 +31,18 @@ def checkTime(time):
         print(time)
     elif time == "15:5":
         print(time)
-        print("hello")
     else:
         print(time)
-        print("hi")
-    
+        sender(questions["rating"])
+        x = responder("rating", questions["rating"])
+        print(x)
+
+def sender(content):
+    print(content)
+
+questions = {
+    "rating": "Rate how you're feeling from a scale of 1 to 10", 
+    "sleep": "Rate your quality of sleep on a scale of 1 to 10"
+}
 
 

@@ -10,7 +10,7 @@ def dailyRoutine():
         #question types ratings, reminder, yn
 def responder(qtype, response):
     if qtype == 'rating':
-        print(response + " \n")
+        print(" \n")
         used = input() 
         print(used)
     if qtype == 'dialog':
@@ -40,6 +40,15 @@ def checkTime(time):
 def sender(content):
     print(content)
 
+def loop1():
+    sender("intention")
+    intent = responder("intention")
+    sleep = responder("sleep")
+    rating = responder("rating")
+
+def loop
+
+
 questions = {
     "rating": "Rate how you're feeling from a scale of 1 to 10", 
     "sleep": "Rate your quality of sleep on a scale of 1 to 10",
@@ -51,7 +60,9 @@ questions = {
     "new": "Did you experience anything new today?",
     "goodThings": "What is something good you did today?",
     "future": "What can you do later in the week that can help yopu be more productive?",
-    "feelings": "How did you feel after a negative event this week?"
+    "feelings": "How did you feel after a negative event this week?",
+    "selfadvice": "What advice would you give to someone else in your situation?",
+    "nofilter": "What is something you would want to tell that person that you havent?"
 }
 
 

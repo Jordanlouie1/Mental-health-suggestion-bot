@@ -1,8 +1,8 @@
 import datetime
 
 def dailyRoutine():
-    print('hello world')
-    print(datetime.time)
+    print('hello')
+    print(datetime.datetime.now())
 
 #question types ratings, reminder, yn
 def responder(qtype, response):

@@ -1,8 +1,7 @@
 import textPrompts as tp
 
 def main():
-    print("Hi!")
-    tp.dailyRoutine
+    tp.dailyRoutine()
 
 if __name__ == '__main__':
     main()

@@ -42,7 +42,16 @@ def sender(content):
 
 questions = {
     "rating": "Rate how you're feeling from a scale of 1 to 10", 
-    "sleep": "Rate your quality of sleep on a scale of 1 to 10"
+    "sleep": "Rate your quality of sleep on a scale of 1 to 10",
+    "intention": "Set your intention for the day",
+    "grateful": "What are you grateful for today?",
+    "productive": "Have you been productive thus far in your day?",
+    "eating": "Have you been eating?",
+    "workday": "Who did you interact with today and how did it make you feel?",
+    "new": "Did you experience anything new today?",
+    "goodThings": "What is something good you did today?",
+    "future": "What can you do later in the week that can help yopu be more productive?",
+    "feelings": "How did you feel after a negative event this week?"
 }
 
 

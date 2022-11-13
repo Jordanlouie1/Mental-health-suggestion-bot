@@ -20,9 +20,10 @@ We submitted something that kind of works
 
 ## What we learned
 We learned how to use TwilioAPI to send and receive SMS 
-Techniques on self-reflection from Empathie
-How to use Git in Visual Studio Code
-Frontend???
+Techniques on self-reflection from Empathie and how to use Git in Visual Studio Code.
+For the backend, we learned how to use Mircrosoft Azure to create an individual web app and applied it to our SuggestionBot app. By connecting the public web using the Azure static app, we established a local web which faciliates us to transfer messages between clients and the web app.
+Also, we gained a deep understanding about how VS Code can build its own toolset based different computer languages and different interpreter versions.
+Since VS Code downloads toolset according to the default global environment, we need to create the corresponding toolset according to the various computer language environments.
 
 ## What's next for Follow Up
 It would be cool if Follow up could not just recommend you activities but instead actually lead those activities. Having audio prompts and voice recognition is something we discussed but did not have the expertise to implement in 24 hours. Also while the data is collected and can be displayed, having a user friendly application for both users and professionals to look through data would be ideal

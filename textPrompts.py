@@ -32,7 +32,6 @@ def checkTime(time):
     elif time == "22:0":
         loopNight()
     else:
-        loopReflection()
         loopTest()
 
 def loopMorning():

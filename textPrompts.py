@@ -16,6 +16,8 @@ def responder(clock):
     f.write(response)
     f.close()
 
+def quote():
+    print("whales are the largest animals on earth")
 def sender(content):
     sms.sendMsg(questions[content])
 
@@ -30,6 +32,7 @@ def checkTime(time):
     elif time == "22:0":
         loopNight()
     else:
+        loopReflection()
         loopTest()
 
 def loopMorning():
@@ -40,45 +43,54 @@ def loopMorning():
     quote()
 
 def loopNoon():
-    sender("midday")
+    sender("productive")
     sender("eating")
     sender("rating")
     responder(datetime.datetime.now())
     quote()
 def loopEvening():
     sender("interact")
-    sender("")
+    sender("midday")
     sender("rating")
-
+    responder(datetime.datetime.now())
+    quote()
 def loopNight():
     sender("future")
+    sender("feeling")
     sender("rating")
-
+    responder(datetime.datetime.now())
+    quote()
 def loopReflection():
-    sender()
-
+    sender("grateful")
+    sender("interact")
+    sender("advice")
+    responder(datetime.datetime.now())
+    quote()
 def loopTest():
+    quote()
     sender("dreams")
     sender("advice")
+    sender("nofilter")
     sender("rating")
-    responder("test")
+    responder(datetime.datetime.now())
+    quote()
+def report():
+    print("report")
 
-
-def quote():
-    print("whales are the largest animals on earth")
 
 questions = {
     "rating": "Rate how you're feeling from a scale of 1 to 10",
-    "midday": "Anything noteworthy happen in your day so far?", 
+    "midday": "Anything noteworthy happen in your day?",
     "sleep": "Rate your quality of sleep on a scale of 1 to 10",
-    "dreams": "Can you tell me what you dreamed about?",
-    "advice": "what is some advice you would give to someone in your situation",
+    "dreams": "Did you have any dreams?",
+    "advice": "What is some advice you would give to someone in your situation?",
     "goals": "What are your goals for the day",
     "cause": "What happened to ",
     "grateful": "What are you grateful for today?",
     "productive": "Have you been productive thus far in your day?",
     "eating": "What did you eat?",
-    "interact": "Who did you interact with today and how did it make you feel?",
+    "interact": "Who did you interact with today?",
+    "feeling": "How did they ",
     "new": "Did you experience anything new today?",
     "goodThings": "What is something good you did today?",
     "future": "What can you do later in the week that can help yopu be more productive?",

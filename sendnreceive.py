@@ -19,7 +19,7 @@ def sendMsg(message):
     client.messages.create(to=to,
                        from_=number,
                        body=message)
-    time.sleep(5)
+    time.sleep(8)
     length = len(client.messages.list())
     while length == len(client.messages.list()):
         time.sleep(5) #waiting for message
@@ -29,7 +29,7 @@ def checkMsg(clock):
     f = open("response.csv", "a")
     for msg in msgs:
         if (msg.direction == 'inbound'):
-            f.write(str(datetime.datetime.now()) + ', ' + msg.body + ', ')
+            f.write(str(datetime.datetime.now()) + ', ' + msg.body + ', \n')
     f.write('\n ')
     f.close()
 

@@ -2,6 +2,8 @@ import os
 from twilio.rest import Client
 import json
 
+# we received the message from the client and store the messages and information from the client in json file, which is named as message.
+
 # Find your Account SID at twilio.com/console
 # Provision API Keys at twilio.com/console/runtime/api-keys
 # and set the environment variables. See http://twil.io/secure

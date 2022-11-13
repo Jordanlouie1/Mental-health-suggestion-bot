@@ -40,23 +40,49 @@ def checkTime(time):
 def sender(content):
     print(content)
 
-def loop1():
-    sender("intention")
-    intent = responder("intention")
+def loopMorning():
+    sender("goals")
+    intent = responder("goals")
+    sender("sleep")
     sleep = responder("sleep")
+    sender("rating")
     rating = responder("rating")
+    quote()
 
-def loop
+def loopNoon():
+    sender("midday")
+    midday = responder("midday")
+    sender("eating")
+    eat = responder("eating")
+    sender("rating")
+    rating = responder("rating")
+    quote()
+def evening():
+    sender("interact")
+    interact = responder("interact")
+    sender("")
 
+
+def loopNight():
+    sender("future")
+
+def loopReflection():
+    sender()
+
+def quote():
+    print("whales are the largest animals on earth")
 
 questions = {
-    "rating": "Rate how you're feeling from a scale of 1 to 10", 
+    "rating": "Rate how you're feeling from a scale of 1 to 10",
+    "midday": "Anything noteworthy happen in your day so far?", 
     "sleep": "Rate your quality of sleep on a scale of 1 to 10",
-    "intention": "Set your intention for the day",
+    "advice": "what is some advice you would give to someone in your situation",
+    "goals": "What are your goals for the day",
+    "cause": "What happened to ",
     "grateful": "What are you grateful for today?",
     "productive": "Have you been productive thus far in your day?",
-    "eating": "Have you been eating?",
-    "workday": "Who did you interact with today and how did it make you feel?",
+    "eating": "What did you eat?",
+    "interact": "Who did you interact with today and how did it make you feel?",
     "new": "Did you experience anything new today?",
     "goodThings": "What is something good you did today?",
     "future": "What can you do later in the week that can help yopu be more productive?",

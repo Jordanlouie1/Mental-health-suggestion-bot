@@ -8,16 +8,15 @@ def dailyRoutine():
         t.sleep(20)
         
         #question types ratings, reminder, yn
-def responder(qtype, response):
-    if qtype == 'rating':
-        print(" \n")
-        used = input() 
-        print(used)
-    if qtype == 'dialog':
-        print(response)
-    if qtype == 'yn':
-        print(response)
-    
+def responder(response):
+    f = open("test.txt", "a")
+    response = input()
+    f.write(response)
+    f.close()
+
+def sender(content):
+    print(questions[content])
+
 def checkTime(time):
     if time == "09:0":
         print(time)
@@ -29,16 +28,10 @@ def checkTime(time):
         print(time)
     elif time == "22:0":
         print(time)
-    elif time == "15:5":
-        print(time)
     else:
         print(time)
-        sender(questions["rating"])
-        x = responder("rating", questions["rating"])
-        print(x)
-
-def sender(content):
-    print(content)
+        loopMorning()
+        print("Do your best!")
 
 def loopMorning():
     sender("goals")
